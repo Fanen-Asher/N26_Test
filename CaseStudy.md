@@ -6,7 +6,7 @@
 
 ## from the documentation online, Firefly III will require a webserver, a database server since it is written in PHP, so we will have to setup these services as well. using the system architecture below for a coporate organisation setup with the expectation that so many staff will be accessing the system globally.
 
-![virtualhost website](./CaseStudyPix/SystemDesign.png)
+![virtualhost website](./CaseStudyPix/SystemDesign.PNG)
 
 
 
@@ -16,12 +16,12 @@
 
 ## From the documentation an Nginx webserver can be used to provide response to the request to access the application from the users. hoever, in this case I will be using ELB to route request to different VM 
 
-![virtualhost website](./CaseStudyPix/Route53.png)
+![virtualhost website](./CaseStudyPix/Route53.PNG)
 
 
 ## I will also setup  an autoscaling group for the VM for VM scaling automation incases where there may not really be high request from users or times where there could be high requests from users.
 
-![virtualhost website](./CaseStudyPix/AutoScale.png)
+![virtualhost website](./CaseStudyPix/AutoScale.PNG)
 
 ## I will provision the Nginx on EC2 instances with the Auto scaling group as well with the right Operating system AMI and ensure it allows traffic from the security group of the Elastic load balancer uisng port 8080
 
@@ -29,7 +29,7 @@
 
 ## for the back end side I will deploy services such as RabbitMq for rapid request of webservers and memcashe for data cashing request sent to the MySQL database which will be the third service deployed at the back end to complete the back end setup.
 
-![virtualhost website](./CaseStudyPix/Back_Front.png)
+![virtualhost website](./CaseStudyPix/Back_Front.PNG)
 
 
 ## The Amazon Route 53 used for the company's domain will be used to setup the DNS private zones for the backend services for efficient FQDN resolution fr the different EC 2 instances.
@@ -64,7 +64,7 @@
 
 ## there is the possibility of defining these task in a template that can be uploaded using different IaaC tools like Teraform or Cloudformation for the deployment of the different resources but since I am going with the AWS deployment Option i can easily deploy this using Cloudformation
 
-![virtualhost website](./CaseStudyPix/CloudFormation.png)
+![virtualhost website](./CaseStudyPix/CloudFormation.PNG)
 
 # Question 2: 
 
@@ -76,7 +76,7 @@
 
 ## I will start by creating a one time password entry to pass in the value of a password for the user before he changes the password after logon. this is defined under the parameter section of the script seen below
 
-![virtualhost website](./CaseStudyPix/parameter.png)
+![virtualhost website](./CaseStudyPix/parameter.PNG)
 
 ## then will create actual resources, and i will start by creating the first user and define the type of user and the username 
 
@@ -93,7 +93,7 @@
 ## the additiona cloudformation template script can be seen below
 
 
-![virtualhost website](./CaseStudyPix/CloudFormationTemp.png)
+![virtualhost website](./CaseStudyPix/CloudFormationTemp.PNG)
 
 ## then from cloudFormation within AWS  we can create a stack to upload the template
 
@@ -114,12 +114,12 @@
 
 ## the design of how cloudwatch can be setup is seen below
 
-![virtualhost website](./CaseStudyPix/CWDesign.png)
+![virtualhost website](./CaseStudyPix/CWDesign.PNG)
 
 ## its good to know that CloudWatch creates some metrics automatically after a resource is added. some metrics can be viewed from the screenshot below
 
 
-![virtualhost website](./CaseStudyPix/metrics.png)
+![virtualhost website](./CaseStudyPix/metrics.PNG)
 
 ## You can customize other non-existing metrics
 
@@ -156,13 +156,13 @@
 ## the alarms options can be used to notify a user when there is an abnomality in behavior for any of the resources used. lets say it been below or above a certain threshold. these notification can be sent to our coporate gmail accounts setup on GSuite
 
 
-![virtualhost website](./CaseStudyPix/Alarm.png)
+![virtualhost website](./CaseStudyPix/Alarm.PNG)
 
 ## CloudWatch Logs Insights enables you to interactively search and analyze your log data in Amazon CloudWatch Logs to know what is happening within the system.
 
 ## so we will create some logs within the instance application and see how we can stream it through the application
 
-![virtualhost website](./CaseStudyPix/LogSetUp.png)
+![virtualhost website](./CaseStudyPix/LogSetUp.PNG)
 
 ## a cloud watch agent will be setup on the resources where logs will be accessed from
 
@@ -206,7 +206,7 @@
 
 ## I edit the above file as per the logs configurations below
 
-![virtualhost website](./CaseStudyPix/Logfile.png)
+![virtualhost website](./CaseStudyPix/Logfile.PNG)
 
 ## then start the aws agent
 
