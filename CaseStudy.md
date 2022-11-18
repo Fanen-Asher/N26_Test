@@ -6,7 +6,7 @@
 
 ## from the documentation online, Firefly III will require a webserver, a database server since it is written in PHP, so we will have to setup these services as well. using the system architecture below for a coporate organisation setup with the expectation that so many staff will be accessing the system globally.
 
-
+![virtualhost website](./CaseStudyPix/SystemDesign.PNG)
 
 
 
@@ -225,7 +225,7 @@
 ## thats my Answer to the 3 questions
 
 
-![virtualhost website](./CaseStudyPix/SystemDesign.PNG)
+
 
 
 
