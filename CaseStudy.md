@@ -14,7 +14,7 @@
 
 ## From the documentation an Nginx webserver can be used to provide response to the request to access the application from the users. hoever, in this case I will be using ELB to route request to different VM 
 
-![virtualhost website](./CaseStudyPix/Route53.png)
+![virtualhost website](./CaseStudyPix/Route5.png)
 
 
 ## I will also setup  an autoscaling group for the VM for VM scaling automation incases where there may not really be high request from users or times where there could be high requests from users.
