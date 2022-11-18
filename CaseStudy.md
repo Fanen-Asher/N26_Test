@@ -6,7 +6,9 @@
 
 ## from the documentation online, Firefly III will require a webserver, a database server since it is written in PHP, so we will have to setup these services as well. using the system architecture below for a coporate organisation setup with the expectation that so many staff will be accessing the system globally.
 
-![virtualhost website](./CaseStudyPix/SystemDesign.PNG)
+
+
+
 
 ## since the DNS is setup using Route 53, we can easily make use of AWS core specific services for the deployment option although other options can be useds as well from other vendors. the Amazon certificate manager will also be employed since it should be a secure site deployment to help authenticate communication between the browser and the webserver
 
@@ -14,7 +16,7 @@
 
 ## From the documentation an Nginx webserver can be used to provide response to the request to access the application from the users. hoever, in this case I will be using ELB to route request to different VM 
 
-![virtualhost website](./CaseStudyPix/Route5.png)
+![virtualhost website](./CaseStudyPix/Route53.png)
 
 
 ## I will also setup  an autoscaling group for the VM for VM scaling automation incases where there may not really be high request from users or times where there could be high requests from users.
@@ -221,6 +223,9 @@
 ## An alarm can also be setup for when counts is more than a certain number then it sends an alarm to the cofigured GSuite email account.
 
 ## thats my Answer to the 3 questions
+
+
+![virtualhost website](./CaseStudyPix/SystemDesign.PNG)
 
 
 
