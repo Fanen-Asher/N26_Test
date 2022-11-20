@@ -8,6 +8,14 @@
 
 ![virtualhost website](./CaseStudyPix/SystemDesign.PNG)
 
+## another option is we could use a complete SaaS or PaaS service from AWS for the deployment. more like rearchitevting or refactoring the above design to look more like the picture below
+
+![virtualhost website](./CaseStudyPix/Refactor.PNG)
+
+## i will use the first design thats looking at a IaaS kind of architecture from AWS.
+
+
+
 
 
 ## since the DNS is setup using Route 53, we can easily make use of AWS core specific services for the deployment option although other options can be useds as well from other vendors. the Amazon certificate manager will also be employed since it should be a secure site deployment to help authenticate communication between the browser and the webserver
