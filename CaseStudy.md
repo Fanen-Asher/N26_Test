@@ -8,7 +8,7 @@
 
 ![virtualhost website](./CaseStudyPix/SystemDesign.PNG)
 
-## another option is we could use a complete SaaS or PaaS service from AWS for the deployment. more like rearchitevting or refactoring the above design to look more like the picture below
+## another option is we could use a complete SaaS or PaaS service from AWS for the deployment. more like re-architecting or refactoring the above design to look more like the screenshot below
 
 ![virtualhost website](./CaseStudyPix/Refactor.PNG)
 
