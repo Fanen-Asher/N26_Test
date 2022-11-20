@@ -114,7 +114,7 @@
 
 ## Cloudwatch can be used to collect the logs from the application and some metrics can be used to create a dashboard that cn be reviewed to understand the state of the application
 
-## Also note that for better instance performance the log files can be transfered to S3 bucket so that there is available disc space in the EC2  instance.
+## Also note that for better instance performance the log files can be transfered to S3 bucket for archiving so that there is available disc space in the EC2  instance for better performance
 
 ## the design of how cloudwatch can be setup is seen below
 
