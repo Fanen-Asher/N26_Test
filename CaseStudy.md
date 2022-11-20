@@ -194,6 +194,8 @@
 
 ## while setting up the instance I will attch the instance to an IAM role, this is more secured than creating a user that will be used and the access and secret key can be easily exposed
 
+## please note that an IAM role is not for humane access to resouces but giving other resources permissions to other resources with AWS
+
 ## Install cloudwatch agent in the instance using the scripts
 
 `sudo yum update -y`
