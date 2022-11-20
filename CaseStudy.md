@@ -196,7 +196,7 @@
 
 ## please note that an IAM role is not for humane access to resouces but giving other resources permissions to other resources with AWS
 
-## Install cloudwatch agent in the instance using the scripts
+## Install cloudwatch agent in the instance using the scripts, the agent will assist to take logs from the instance to the cloudwatch service
 
 `sudo yum update -y`
 
