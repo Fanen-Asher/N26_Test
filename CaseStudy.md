@@ -12,9 +12,7 @@
 
 ![virtualhost website](./CaseStudyPix/Refactor.PNG)
 
-## i will use the first design thats looking at a IaaS kind of architecture from AWS.
-
-
+## I will use the first design in this case an IaaS kind of architecture from AWS is employed for the deployment
 
 
 
