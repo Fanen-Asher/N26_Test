@@ -192,7 +192,7 @@
 ]
 }`
 
-## while setting up the instance I will attch theinstance to the IAM role
+## while setting up the instance I will attch the instance to an IAM role, this is more secured than creating a user that will be used and the access and secret key can be easily exposed
 
 ## Install cloudwatch agent in the instance using the scripts
 
