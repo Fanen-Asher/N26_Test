@@ -218,7 +218,7 @@
 
 `sudo service awslogs start`
 
-## create dummy log file at the location you can configured in the file and keep appending some data (e.g create and append data in /var/logapplication log file)
+## create dummy log file at the location you can configured in the file and keep appending some data (e.g create and append data in /var/logapplication.log file)
 
 ## then we can verify we can see logs in CloudWatch logs console
 
